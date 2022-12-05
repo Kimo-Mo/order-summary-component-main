@@ -1,0 +1,217 @@
+:root {
+  --components-color: #3829e0;
+  --card-bg-color: #f5f7ff;
+  --body-bg-color: #e0e8ff;
+  --components-hover-color: #766cf1;
+  --paragraph-color: #7280a7;
+  --heading-color : #1f2f56;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'work sans';
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+}
+
+.container  .card {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--card-bg-color);
+  border-radius: 15px ;
+  -webkit-border-radius: 15px ;
+  -moz-border-radius: 15px ;
+  -ms-border-radius: 15px ;
+  -o-border-radius: 15px ;
+}
+
+.container  .card .info {
+  padding: 20px;
+}
+
+.container  .card img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+}
+.container .card .info .title {
+  color: var(--heading-color);
+  font-size: 24px ;
+  margin:  15px 0;
+}
+.container .card .info .description {
+  margin: 25px 0;
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+
+.container .card .info .buy-plan {
+  background-color: #edeeff;
+  padding: 14px;
+  margin: 25px 0;
+  display: flex ;
+  justify-content: space-between;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.container .card .info .buy-plan .icon {
+  background-color: var(--body-bg-color);
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container .card .info .plan-title {
+  color: var(--heading-color);
+  font-size: 16px;
+}
+
+.container .card .info .price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+i {
+  color: var(--heading-color);
+}
+.container .card .info .buy-plan a {
+  margin-top: 10px;
+}
+.container .card .info .buy-plan a:hover {
+  color: var(--components-hover-color);
+  cursor: pointer;
+
+}
+.button {
+  width: 100%;
+  border: none;
+  background-color: var(--components-color);
+  color: #f5f7ff;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 5px 15px -5px var(--components-color);
+  
+}
+.button:hover {
+  background-color: var(--components-hover-color);
+  cursor: pointer;
+
+}
+.cancel-button {
+  margin: 15px auto ;
+  width: fit-content;
+  font-size: 12px;
+  color: var(--paragraph-color);
+}
+.cancel-button:hover {
+  color: var(--components-hover-color);
+  cursor: pointer;
+} 
+
+@media only screen and  (max-width: 600px) {
+  body {
+    background-color: var(--body-bg-color);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+  .container .card {
+    min-width: auto;
+    width: 95%;
+    max-width: 85%;
+}
+.container .card .image {
+  max-width: 100%;
+
+}
+.container .card .image img {
+  width: 100%;
+}
+.container .card .info {
+  width: 100%;
+  row-gap: 12px;
+  padding: 20px;
+
+}
+.container .card .info .description {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  margin: 10px;
+}
+}
+
+@media only screen and (min-width: 600px) and  (max-width: 768px) {
+  body {
+    background-color: var(--body-bg-color);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+  .container .card {
+    min-width: auto;
+    width: 55%;
+    max-width: 95%;
+}
+.container .card .image {
+  max-width: 100%;
+
+}
+.container .card .image img {
+  width: 100%;
+}
+.container .card .info {
+  width: 100%;
+  row-gap: 12px;
+  padding: 25px;
+
+}
+.container .card .info .description {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  margin: 10px;
+}
+}
