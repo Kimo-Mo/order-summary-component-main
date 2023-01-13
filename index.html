@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,29 +23,29 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="image">
-          <img src="./images/illustration-hero.svg" alt="" />
+      <div class="image">
+        <img src="./images/illustration-hero.svg" alt="" />
+      </div>
+      <div class="info">
+        <div class="text">
+          <h1 class="title">Order Summary</h1>
+          <p class="description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
         </div>
-        <div class="info">
-          <div class="text">
-            <h2 class="title">Order Summary</h2>
-            <p class="description">
-              You can now listen to millions of songs, audiobooks, and podcasts
-              on any device anywhere you like!
-            </p>
+        <div class="buy-plan">
+          <div>
+            <img src="images/icon-music.svg" alt="" class="icon">
           </div>
-          <div class="buy-plan">
-            <span class="icon"><i class="fa-solid fa-music"></i></span>
-            <span class="text-plan">
-              <h5 class="plan-title">Annual Plan</h5>
-              <div class="price">$59.99/year</div>
-            </span>
-            <a href="#">Change</a>
+          <div class="text-plan">
+            <h3 class="plan-title">Annuall Plan</h3>
+            <div class="price">$59.99/year</div>
           </div>
-          <button class="button">Proceed to Payment</button>
-          <p class="cancel-button">Cancel Order</p>
+          <a href="#">Change</a>
         </div>
+        <button class="main-button">Proceed to Payment</button>
+        <a href="#" class="cancel-button">Cancel Order</a>
       </div>
     </div>
   </body>
